@@ -27,7 +27,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #d6c528; /* Color del título del menú */
+    color: #FFDAB9; /* Color del título del menú */
 }
 
 .section {
@@ -35,8 +35,8 @@ h1 {
 }
 
 .section h2 {
-    background-color: #e1ffc4; /* Color de fondo del título de sección */
-    color: #d6c528; /* Color del texto del título de sección */
+    background-color: #FFDAB9; /* Color de fondo del título de sección */
+    color: #D2B48C; /* Color del texto del título de sección */
     padding: 10px;
     margin: 0 -20px 10px;
     border-radius: 8px 8px 0 0;
