@@ -1,0 +1,143 @@
+/* styles.css */
+
+/* Estilos generales para el cuerpo */
+body {
+    margin: 0;
+    font-family: "century gothic", Arial, sans-serif;
+}
+
+/* Contenedor del menú */
+.menu-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Estilos del encabezado */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #FFDAB9;
+}
+
+/* Estilos de la tabla del logo y contacto */
+table {
+    max-width: 800px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+td {
+    padding: 10px;
+}
+
+/* Estilos de la tabla de productos */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Habilitar scroll horizontal en pantallas pequeñas */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table tr:first-child th:first-child {
+    border-top-left-radius: 8px;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: 8px;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+.espacio {
+    height: 20px;
+}
+
+/* Estilos de la sección */
+.section {
+    padding: 20px;
+}
+
+.section h2 {
+    background-color: #FFDAB9;
+    color: #D2B48C;
+    padding: 10px;
+    margin: 0 -20px 10px;
+    border-radius: 8px 8px 0 0;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    /* Para pantallas de 768px o menos (tabletas en modo vertical) */
+    table {
+        font-size: 14px;
+    }
+
+    td {
+        display: block;
+        text-align: right;
+        border: none;
+    }
+
+    td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+
+    /* Ocultar el logo y contacto en pantallas muy pequeñas */
+    header img {
+        display: none;
+    }
+
+    td.contact-info {
+        display: block;
+        text-align: left;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
