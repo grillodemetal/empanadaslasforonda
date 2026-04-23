@@ -1,0 +1,135 @@
+body {
+    font-family: "century gothic", Arial, sans-serif;
+    background-color: #121212;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 30px;
+    max-width: 2500px;
+}
+
+.contact-info {
+    font-size: 24px;
+    color: #cccccc;
+}
+
+.menu-container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    max-width: 2500px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: #FFDAB9;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    background-color: #2c2c2c;
+    color: #FFDAB9;
+    padding: 10px;
+    margin: 0 -20px 10px;
+    border-radius: 8px 8px 0 0;
+    max-width: 2500px;
+    width: 100%;
+}
+
+table {
+    max-width: 2500px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #444;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #1a1a1a;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #333;
+    text-align: center;
+    color: #ffffff;
+}
+
+th {
+    background-color: #2c2c2c;
+    color: #FFDAB9;
+}
+
+tr:nth-child(even) {
+    background-color: #222;
+}
+
+tr:nth-child(odd) {
+    background-color: #1a1a1a;
+}
+
+table tr:first-child th:first-child {
+    border-top-left-radius: 8px;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: 8px;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+.espacio {
+    height: 20px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    td {
+        display: block;
+        text-align: right;
+        border: none;
+    }
+
+    td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        color: #FFDAB9;
+    }
+
+    header img {
+        display: none;
+    }
+
+    td.contact-info {
+        display: block;
+        text-align: left;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
